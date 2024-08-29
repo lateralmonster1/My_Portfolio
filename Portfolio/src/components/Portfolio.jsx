@@ -5,10 +5,10 @@ function Portfolio() {
   const projects = [
     {
       title: 'Favorite Project',
-      image: 'Screenshot 2024-08-29 142835.png',
+      image: '.\public\images\proj1.png',
       repoLink: 'https://github.com/lateralmonster1/social-network-api.git',
     },
-    // Add more projects here, ensuring you have six in total
+    // add 5 more projects here
   ];
 
   return (

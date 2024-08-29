@@ -169,52 +169,45 @@ footer a:hover {
   gap: 2rem;
 }
 
+/* src/App.css or src/components/Project.css */
+
+/* Project Container */
 .project {
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem; /* Consistent spacing with other sections */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.project img {
-  border-bottom: 1px solid #ddd;
+/* Image Styles */
+.project-image {
+  width: 200px;  /* Consistent with responsive design */
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Matches the shadow styling in other areas */
   transition: transform 0.3s ease;
 }
 
-.project:hover img {
+.project-image:hover {
   transform: scale(1.05);
 }
 
-.project h3 {
-  padding: 1rem;
-  font-size: 1.5rem;
+/* Project Title */
+.project-title {
+  font-size: 1.5rem; /* Consistent with other headings */
+  margin-bottom: 1rem;
+  color: #007bff; /* Consistent with link colors used elsewhere */
+}
+
+/* Links */
+.project a {
+  display: block;
+  padding: 0.5rem;
   color: #007bff;
-  text-align: center;
+  text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.project:hover h3 {
-  color: #0056b3;
-}
-
-.project a {
-  display: block;
-  padding: 1rem;
-  color: #007bff;
-  border-top: 1px solid #ddd;
-  text-align: center;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 .project a:hover {
-  background-color: #007bff;
-  color: #fff;
+  color: #0056b3; /* A slightly darker shade to indicate interaction */
 }
