@@ -1,4 +1,6 @@
-import { useState } from 'react'
+// src/App.jsx
+import React, { useState } from 'react';
+import './App.css';  // Import the component-specific CSS
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -25,10 +27,16 @@ function App() {
   };
 
   return (
-    <div>
-      <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
-      <main>{renderSection()}</main>
-      <Footer />
+    <div className="app-container">
+      <header className="app-header">
+        <Header currentSection={currentSection} setCurrentSection={setCurrentSection} />
+      </header>
+      <main className="app-main">
+        {renderSection()}
+      </main>
+      <footer className="app-footer">
+        <Footer />
+      </footer>
     </div>
   );
 }
