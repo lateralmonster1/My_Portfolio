@@ -5,9 +5,8 @@ function Portfolio() {
   const projects = [
     {
       title: 'Favorite Project',
-      image: '/path/to/project1.jpg',
-      liveLink: 'https://example.com/project1',
-      repoLink: 'https://github.com/username/project1',
+      image: 'Screenshot 2024-08-29 142835.png',
+      repoLink: 'https://github.com/lateralmonster1/social-network-api.git',
     },
     // Add more projects here, ensuring you have six in total
   ];
