@@ -1,0 +1,213 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav ul li {
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: relative;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav ul li:hover::after,
+nav ul li.active::after {
+  width: 100%;
+}
+
+nav ul li:hover {
+  color: #007bff;
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px 20px;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation for content fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+section img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+}
+
+/* Footer styles */
+footer {
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #007bff;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* src/App.css or src/components/Project.css */
+
+/* Project Container */
+.project {
+  text-align: center;
+  margin-bottom: 2rem; /* Consistent spacing with other sections */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Styles */
+.project-image {
+  width: 200px;  /* Consistent with responsive design */
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Matches the shadow styling in other areas */
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.5rem; /* Consistent with other headings */
+  margin-bottom: 1rem;
+  color: #007bff; /* Consistent with link colors used elsewhere */
+}
+
+/* Links */
+.project a {
+  display: block;
+  padding: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: #0056b3; /* A slightly darker shade to indicate interaction */
+}
