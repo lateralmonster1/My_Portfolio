@@ -1,6 +1,4 @@
 import { useState } from 'react'
-// src/App.jsx
-import { useState } from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
