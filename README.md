@@ -1,6 +1,8 @@
 # React Portfolio
 
-## Description
+
+##Description
+## ![Screenshot 2024-09-04 153856](https://github.com/user-attachments/assets/bb3d8750-66df-4914-8f1d-e9e6704d6c3b)
 
 This React Portfolio showcases my projects, skills, and experience as a web developer. It serves as a personal website to highlight my work, demonstrate my abilities, and provide potential employers and collaborators with an easy way to get in touch with me. The portfolio is built using React, allowing for a dynamic, responsive, and modern user experience.
 
@@ -48,7 +50,7 @@ Start the development server:
 bash
 Copy code
 npm start
-The application will start in development mode and can be viewed in your browser at http://localhost:8888.
+The application will start in development mode and can be viewed in your browser at http://localhost:3000.
 
 Usage
 The portfolio is divided into several sections:
