@@ -24,7 +24,7 @@ This React Portfolio showcases my projects, skills, and experience as a web deve
 - **Project Showcase**: Highlights my key projects with descriptions, screenshots, and links to live demos and GitHub repositories.
 - **About Me Section**: Provides a brief introduction, including my background, skills, and professional experience.
 - **Contact Form**: A functional contact form that allows visitors to get in touch with me directly from the website.
-- **Social Media Links**: Easy access to my professional social media profiles, such as LinkedIn, GitHub, and Twitter.
+- **Social Media Links**: Easy access to my professional social media profiles, such as LinkedIn, GitHub.
 
 ## Installation
 
@@ -35,9 +35,9 @@ To run this portfolio locally on your machine, follow these steps:
    git clone https://github.com/your-username/react-portfolio.git
 Navigate to the project directory:
 
-bash
-Copy code
-cd react-portfolio
+2. **Directory**
+
+cd My_Portfolio
 Install dependencies:
 
 bash
@@ -48,7 +48,7 @@ Start the development server:
 bash
 Copy code
 npm start
-The application will start in development mode and can be viewed in your browser at http://localhost:3000.
+The application will start in development mode and can be viewed in your browser at http://localhost:8888.
 
 Usage
 The portfolio is divided into several sections:
@@ -69,10 +69,7 @@ JavaScript: Programming language for interactive and dynamic content.
 React Router: Library for managing navigation within the portfolio.
 EmailJS: Service used to handle the contact form submissions.
 Bootstrap/Tailwind: CSS frameworks for responsive design (mention the one you used).
-Screenshots
-Screenshot of the home page.
 
-Screenshot of the projects showcase page.
 
 Deployment
 The portfolio is deployed and can be viewed live at:
