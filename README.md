@@ -24,7 +24,7 @@ This React Portfolio showcases my projects, skills, and experience as a web deve
 - **Project Showcase**: Highlights my key projects with descriptions, screenshots, and links to live demos and GitHub repositories.
 - **About Me Section**: Provides a brief introduction, including my background, skills, and professional experience.
 - **Contact Form**: A functional contact form that allows visitors to get in touch with me directly from the website.
-- **Social Media Links**: Easy access to my professional social media profiles, such as LinkedIn, GitHub, and Twitter.
+- **Social Media Links**: Easy access to my professional social media profiles, such as LinkedIn, GitHub.
 
 ## Installation
 
