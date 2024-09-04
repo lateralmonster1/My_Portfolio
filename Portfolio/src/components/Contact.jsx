@@ -17,22 +17,46 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let formErrors = {};
+    // let formErrors = {};
 
-    if (!formData.name) formErrors.name = 'Name is required';
-    if (!formData.email) {
-      formErrors.email = 'Email is required';
-    } else if (!validateEmail(formData.email)) {
-      formErrors.email = 'Email is not valid';
-    }
-    if (!formData.message) formErrors.message = 'Message is required';
+    // if (!formData.name) formErrors.name = 'Name is required';
+    // if (!formData.email) {
+    //   formErrors.email = 'Email is required';
+    // } else if (!validateEmail(formData.email)) {
+    //   formErrors.email = 'Email is not valid';
+    // }
+    // if (!formData.message) formErrors.message = 'Message is required';
 
-    setErrors(formErrors);
+    // setErrors(formErrors);
 
-    if (Object.keys(formErrors).length === 0) {
-      // Handle form submission
-      console.log('Form submitted:', formData);
-    }
+    // if (Object.keys(formErrors).length === 0) {
+    //   // Handle form submission
+    //   console.log('Form submitted:', formData);
+    // }
+
+    fetch('http://127.0.0.1:8888', {
+      method: "POST",
+      headers: {
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+
+    .then((response) => response.json())
+    .then((result) => {
+
+      if(result.status === 404)
+      {
+        alert('Please enter valid')
+      }
+      else
+      {
+        alert('Mesaage recievied');
+      }
+
+      console.log('from server', result)
+    })
+
   };
 
   return (
