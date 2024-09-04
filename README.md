@@ -89,9 +89,6 @@ Deploy the contents of the build/ directory to your hosting service of choice (e
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 Contact
 For questions or feedback, feel free to reach out:
 
