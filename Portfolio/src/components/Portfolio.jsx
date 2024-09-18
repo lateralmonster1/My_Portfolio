@@ -6,7 +6,8 @@ function Portfolio() {
     {
       title: 'Favorite Project',
       image: '/images/proj1.png',
-      repoLink: 'https://github.com/lateralmonster1/social-network-api.git',
+      liveLink: 'https://breannacamacho.github.io/Nomad/',
+      repoLink: 'https://github.com/lateralmonster1/Nomad.git',
     },
     // add 5 more projects here
   ];

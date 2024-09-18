@@ -18,7 +18,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.project-image {
+  width: 400;
+  height: 100px;
+}
 a {
   color: #007bff;
   text-decoration: none;
