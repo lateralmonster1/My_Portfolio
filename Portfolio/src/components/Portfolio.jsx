@@ -5,7 +5,7 @@ function Portfolio() {
   const projects = [
     {
       title: 'Favorite Project',
-      image: '.\public\images\proj1.png',
+      image: '/images/proj1.png',
       repoLink: 'https://github.com/lateralmonster1/social-network-api.git',
     },
     // add 5 more projects here
